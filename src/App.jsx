@@ -15,7 +15,7 @@ function App() {
       .then(response => response.json())
       .then(data => dispatch( addUser(data) ))
       .catch((error) => console.log(error));
-  }, [])
+  }, [dispatch])
 
   return (
     <div className=''>
